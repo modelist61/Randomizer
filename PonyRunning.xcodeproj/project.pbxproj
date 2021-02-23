@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FBBF03025D69F0B0083E188 /* PonyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBBF02F25D69F0B0083E188 /* PonyView.swift */; };
+		7FBBF03525D6A14F0083E188 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBBF03425D6A14F0083E188 /* Extensions.swift */; };
 		7FF19DF925D470370041D935 /* PoniRunningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF19DF825D470370041D935 /* PoniRunningApp.swift */; };
 		7FF19DFB25D470370041D935 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF19DFA25D470370041D935 /* ContentView.swift */; };
 		7FF19DFD25D4703D0041D935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF19DFC25D4703D0041D935 /* Assets.xcassets */; };
 		7FF19E0025D4703D0041D935 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF19DFF25D4703D0041D935 /* Preview Assets.xcassets */; };
+		7FF19E0A25D470A90041D935 /* RunningScrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF19E0925D470A90041D935 /* RunningScrView.swift */; };
+		7FF19E0D25D470B90041D935 /* RunningScrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF19E0C25D470B90041D935 /* RunningScrViewModel.swift */; };
+		7FF19E1025D47B730041D935 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF19E0F25D47B730041D935 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7FF19DF525D470370041D935 /* PoniRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoniRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBBF02F25D69F0B0083E188 /* PonyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonyView.swift; sourceTree = "<group>"; };
+		7FBBF03425D6A14F0083E188 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7FF19DF525D470370041D935 /* PonyRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PonyRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF19DF825D470370041D935 /* PoniRunningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoniRunningApp.swift; sourceTree = "<group>"; };
 		7FF19DFA25D470370041D935 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FF19DFC25D4703D0041D935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FF19DFF25D4703D0041D935 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7FF19E0125D4703D0041D935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF19E0925D470A90041D935 /* RunningScrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningScrView.swift; sourceTree = "<group>"; };
+		7FF19E0C25D470B90041D935 /* RunningScrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningScrViewModel.swift; sourceTree = "<group>"; };
+		7FF19E0F25D47B730041D935 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +54,7 @@
 		7FF19DF625D470370041D935 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FF19DF525D470370041D935 /* PoniRunning.app */,
+				7FF19DF525D470370041D935 /* PonyRunning.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +64,12 @@
 			children = (
 				7FF19DF825D470370041D935 /* PoniRunningApp.swift */,
 				7FF19DFA25D470370041D935 /* ContentView.swift */,
+				7FBBF02F25D69F0B0083E188 /* PonyView.swift */,
+				7FF19E0825D470760041D935 /* RunningView */,
 				7FF19DFC25D4703D0041D935 /* Assets.xcassets */,
 				7FF19E0125D4703D0041D935 /* Info.plist */,
+				7FBBF03425D6A14F0083E188 /* Extensions.swift */,
+				7FF19E0F25D47B730041D935 /* Timer.swift */,
 				7FF19DFE25D4703D0041D935 /* Preview Content */,
 			);
 			path = PoniRunning;
@@ -69,12 +83,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7FF19E0825D470760041D935 /* RunningView */ = {
+			isa = PBXGroup;
+			children = (
+				7FF19E0925D470A90041D935 /* RunningScrView.swift */,
+				7FF19E0C25D470B90041D935 /* RunningScrViewModel.swift */,
+			);
+			path = RunningView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FF19DF425D470370041D935 /* PoniRunning */ = {
+		7FF19DF425D470370041D935 /* PonyRunning */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FF19E0425D4703D0041D935 /* Build configuration list for PBXNativeTarget "PoniRunning" */;
+			buildConfigurationList = 7FF19E0425D4703D0041D935 /* Build configuration list for PBXNativeTarget "PonyRunning" */;
 			buildPhases = (
 				7FF19DF125D470370041D935 /* Sources */,
 				7FF19DF225D470370041D935 /* Frameworks */,
@@ -84,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = PoniRunning;
+			name = PonyRunning;
 			productName = PoniRunning;
-			productReference = 7FF19DF525D470370041D935 /* PoniRunning.app */;
+			productReference = 7FF19DF525D470370041D935 /* PonyRunning.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7FF19DF025D470370041D935 /* Build configuration list for PBXProject "PoniRunning" */;
+			buildConfigurationList = 7FF19DF025D470370041D935 /* Build configuration list for PBXProject "PonyRunning" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FF19DF425D470370041D935 /* PoniRunning */,
+				7FF19DF425D470370041D935 /* PonyRunning */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FBBF03025D69F0B0083E188 /* PonyView.swift in Sources */,
+				7FF19E0A25D470A90041D935 /* RunningScrView.swift in Sources */,
+				7FF19E0D25D470B90041D935 /* RunningScrViewModel.swift in Sources */,
 				7FF19DFB25D470370041D935 /* ContentView.swift in Sources */,
+				7FF19E1025D47B730041D935 /* Timer.swift in Sources */,
 				7FF19DF925D470370041D935 /* PoniRunningApp.swift in Sources */,
+				7FBBF03525D6A14F0083E188 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FF19DF025D470370041D935 /* Build configuration list for PBXProject "PoniRunning" */ = {
+		7FF19DF025D470370041D935 /* Build configuration list for PBXProject "PonyRunning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FF19E0225D4703D0041D935 /* Debug */,
@@ -318,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FF19E0425D4703D0041D935 /* Build configuration list for PBXNativeTarget "PoniRunning" */ = {
+		7FF19E0425D4703D0041D935 /* Build configuration list for PBXNativeTarget "PonyRunning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FF19E0525D4703D0041D935 /* Debug */,

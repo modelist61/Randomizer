@@ -11,7 +11,7 @@ import SwiftUI
 struct PoniRunningApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PonyView()
         }
     }
 }
